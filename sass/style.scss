@@ -1,0 +1,299 @@
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+	$font-stack:    Roboto, sans-serif;
+	$font-size: 18px;
+
+	$size-xs: 768px;
+	$size-md: 992px;
+	$size-lg: 1200px;
+
+	html,body {
+		font-size: $font-size;
+		font-family: $font-stack;
+		overflow-x:hidden;
+		h1 {
+			text-align: left;
+			margin-bottom: 1em;
+			span {
+			    margin-left: 0.5em;
+    			border-bottom: 1px solid black;
+			}
+		}
+		.logo {
+			text-align: center;
+		}
+		nav {
+			margin-bottom: 1em;
+			button.navbar-toggler {
+			    width: 100%;
+			    border: 0;
+			    outline: 0;
+			}
+			li.nav-item {
+			    text-align: center;
+			}
+			a.nav-link {
+				margin: 1em;
+				padding-bottom: 0.5em;
+				font-weight: bold;
+				border-bottom: 3px solid transparent;
+				&:hover {
+					border-bottom: 3px solid grey;
+				}
+			}
+		}
+		#footer {
+			padding: 1em;
+			background-color: #000;
+			color: white;
+			min-height: 600px;
+			@media screen and (min-width: $size-xs) {
+				padding: 2em;
+			}
+			ul {
+				display: inline-block;
+				padding: 0em;
+				@media screen and (min-width: $size-xs) {
+					padding: 1em;
+				}
+				li {
+					list-style-type: none;
+					margin-bottom: 0.5em;
+					span {
+						color: rgb(161, 211, 218);
+						display: inline-block;
+						width: 70px;
+					}
+				}
+			}
+			#map {
+			    width: 100%;
+			    height: 250px;
+			    display: inline-block;
+			    float: right;
+			    @media screen and (min-width: $size-xs) {
+			    	height: 350px;
+			    	width: 50%;
+			    }
+			    @media screen and (min-width: $size-md) {
+			    	height: 500px;
+			    }
+			}
+		}
+		.no-padding {
+			padding: 0;
+		}
+		.no-radius {
+			border-radius: 0px;
+		}
+		.inline-text {
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+			line-height: 2em;
+			@media screen and (min-width: $size-xs) {
+				width: 60%;
+				margin-left: 2em;
+			}
+			@media screen and (min-width: $size-md) {
+				width: 70%;
+			}
+			@media screen and (min-width: $size-lg) {
+				width: 75%;
+			}
+		}
+
+		.gallery {
+		  display: table;
+		  padding: 10px 0 10px 0;
+		  list-style: none;
+		  width: 100%;
+		  text-align: center;
+		  &:hover li {
+			  opacity: .8;
+			  -webkit-filter: blur(5px);
+			  filter: blur(5px);
+		  }
+		  li {
+			  cursor: pointer;
+			  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			  float: left;
+			  width: 96%;
+			  margin: 2%;
+			  opacity: 1;
+			  transition: all .3s linear;
+  			  @media screen and (min-width: $size-xs) {
+				  width: 29%;
+			  }
+  			  @media screen and (min-width: $size-md) {
+				  width: 21%;
+			  }
+			  @media screen and (min-width: $size-lg) {
+				  width: 16%;
+			  }
+			  &:hover {
+				box-shadow: 0 5px 15px gba(0, 0, 0, 0.4);
+				opacity: 1;
+				transform: scale(1.08);
+				-webkit-filter: blur(0);
+				filter: blur(0);
+				z-index: 9999;
+			  }		  	
+			  img {
+			  	height: 100%;
+			  	width: 100%;
+			  }
+		  }
+		}
+
+		.full-image {
+			width: 100%;
+		}
+		.myStudios {
+			margin-bottom: 1em;
+			a {
+				color: unset;
+				.studio {
+					position: relative;
+				    margin-bottom: 2em;
+			        box-shadow: 5px 5px 15px #ababab;
+				    .studio-image, .studio-info {
+				    	display: inline-block;
+				    	vertical-align: middle;
+				    }
+				    .studio-image {
+				    	width: 100%;
+				    	@media screen and (min-width: $size-xs) {
+				    		width: 50%;
+				    	}
+				    	img {
+				    		width: 100%;
+				    	}
+				    }
+				    .studio-info {
+				    	h3 {
+			    		    width: 100%;
+						    text-align: left;
+						    padding: 0.5em;
+						    @media screen and (min-width: $size-md) {
+						    	padding: 1em;
+						    }
+				    	}
+				    	.studio-details {
+				    		ul {
+			    			    margin-left: 1em;
+		    				    @media screen and (min-width: $size-md) {
+				    				margin-left: 2em;
+				    			}
+				    		}
+				    	}
+				    }
+				    .special-btn {
+				    	position: absolute;
+				    	top: 45%;
+				    	left:30%;
+				    	width: 40%;
+				    	display: none;
+				    }
+				    .cover {
+				    	background-color: rgba(0,0,0,0.5);
+				    	display: none;
+				    	position: absolute;
+				    	width: 100%;
+				    	height: 100%;
+				    }
+				    &:hover {
+				    	@media screen and (min-width: $size-xs) {
+					    	.special-btn {
+					    		display: block;
+					    		opacity: 1;
+					    		z-index: 2;
+					    		border-radius: 0px;
+					    	}
+				    		.cover {
+					    		display: block;
+					    		z-index: 1;
+					    	}
+				    	}
+				    }
+				    .mobile-btn {
+				    	margin-left: 2em;
+					    margin-bottom: 2em;
+					    border-radius: 0px;
+					    @media screen and (min-width: $size-xs) {
+					    	display: none;
+					    }
+				    }
+				}			
+			}
+		}
+		.contact-form {
+			margin-bottom: 3em;
+			input {
+				padding: 0.5em;
+				width: 100%;
+			}
+			textarea {
+				width: 100%;
+			}
+			#send-btn {
+				width: 100%;
+				@media screen and (min-width: $size-xs) {
+					width: unset;
+				}
+			}
+		}
+		.paralax {
+			width: 100%;
+			min-height: 200px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			margin-bottom: 2em;
+			h2 {
+				text-align: center;
+				line-height: 200px;
+				font-size: 3em;
+				text-shadow: 5px 5px black;
+				color: white;
+				@media screen and (min-width: $size-xs) {
+					line-height: 400px;
+				}
+				@media screen and (min-width: $size-md) {
+					line-height: 500px;
+				}
+				@media screen and (min-width: $size-lg) {
+					line-height: 700px;
+				}
+			}
+			@media screen and (min-width: $size-xs) {
+				background-attachment: fixed;
+				min-height: 400px;
+			}
+			@media screen and (min-width: $size-md) {
+				min-height: 500px;
+			}
+			@media screen and (min-width: $size-lg) {
+				min-height: 700px;
+			}
+		}
+		.studio-details-page {
+			float: right;
+		    padding: 1em;
+		    border-radius: 5px;
+		    margin-left: 2em;
+		    margin-bottom: 2em;
+		    background-color: #f8ffff;
+		    width: 100%;
+		    box-shadow: 0px 0px 40px #d6d6d6;
+		    @media screen and (min-width: $size-xs) {
+		    	box-shadow: -15px 15px 40px #d6d6d6;
+		    	width: unset;
+		    }
+		}
+		.studio-text {
+			margin-bottom: 2em;
+		}
+
+	}

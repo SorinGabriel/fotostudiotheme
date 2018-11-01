@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* line 10, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html, body {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* line 14, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html h1, body h1 {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+/* line 17, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html h1 span, body h1 span {
+  margin-left: 0.5em;
+  border-bottom: 1px solid black;
+}
+
+/* line 22, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .logo, body .logo {
+  text-align: center;
+}
+
+/* line 25, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html nav, body nav {
+  margin-bottom: 1em;
+}
+
+/* line 27, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html nav button.navbar-toggler, body nav button.navbar-toggler {
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+
+/* line 32, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html nav li.nav-item, body nav li.nav-item {
+  text-align: center;
+}
+
+/* line 35, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html nav a.nav-link, body nav a.nav-link {
+  margin: 1em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+
+/* line 40, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html nav a.nav-link:hover, body nav a.nav-link:hover {
+  border-bottom: 3px solid grey;
+}
+
+/* line 45, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html #footer, body #footer {
+  padding: 1em;
+  background-color: #000;
+  color: white;
+  min-height: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 45, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html #footer, body #footer {
+    padding: 2em;
+  }
+}
+
+/* line 53, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html #footer ul, body #footer ul {
+  display: inline-block;
+  padding: 0em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 53, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html #footer ul, body #footer ul {
+    padding: 1em;
+  }
+}
+
+/* line 59, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html #footer ul li, body #footer ul li {
+  list-style-type: none;
+  margin-bottom: 0.5em;
+}
+
+/* line 62, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html #footer ul li span, body #footer ul li span {
+  color: #a1d3da;
+  display: inline-block;
+  width: 70px;
+}
+
+/* line 69, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html #footer #map, body #footer #map {
+  width: 100%;
+  height: 250px;
+  display: inline-block;
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 69, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html #footer #map, body #footer #map {
+    height: 350px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 69, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html #footer #map, body #footer #map {
+    height: 500px;
+  }
+}
+
+/* line 83, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .no-padding, body .no-padding {
+  padding: 0;
+}
+
+/* line 86, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .no-radius, body .no-radius {
+  border-radius: 0px;
+}
+
+/* line 89, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .inline-text, body .inline-text {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 89, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .inline-text, body .inline-text {
+    width: 60%;
+    margin-left: 2em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 89, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .inline-text, body .inline-text {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 89, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .inline-text, body .inline-text {
+    width: 75%;
+  }
+}
+
+/* line 106, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .gallery, body .gallery {
+  display: table;
+  padding: 10px 0 10px 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 112, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .gallery:hover li, body .gallery:hover li {
+  opacity: .8;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/* line 117, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .gallery li, body .gallery li {
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 96%;
+  margin: 2%;
+  opacity: 1;
+  transition: all .3s linear;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 117, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .gallery li, body .gallery li {
+    width: 29%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 117, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .gallery li, body .gallery li {
+    width: 21%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 117, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .gallery li, body .gallery li {
+    width: 16%;
+  }
+}
+
+/* line 134, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .gallery li:hover, body .gallery li:hover {
+  box-shadow: 0 5px 15px gba(0, 0, 0, 0.4);
+  opacity: 1;
+  transform: scale(1.08);
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  z-index: 9999;
+}
+
+/* line 142, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .gallery li img, body .gallery li img {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 149, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .full-image, body .full-image {
+  width: 100%;
+}
+
+/* line 152, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios, body .myStudios {
+  margin-bottom: 1em;
+}
+
+/* line 154, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a, body .myStudios a {
+  color: unset;
+}
+
+/* line 156, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio, body .myStudios a .studio {
+  position: relative;
+  margin-bottom: 2em;
+  box-shadow: 5px 5px 15px #ababab;
+}
+
+/* line 160, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .studio-image, html .myStudios a .studio .studio-info, body .myStudios a .studio .studio-image, body .myStudios a .studio .studio-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 164, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .studio-image, body .myStudios a .studio .studio-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 164, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .myStudios a .studio .studio-image, body .myStudios a .studio .studio-image {
+    width: 50%;
+  }
+}
+
+/* line 169, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .studio-image img, body .myStudios a .studio .studio-image img {
+  width: 100%;
+}
+
+/* line 174, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .studio-info h3, body .myStudios a .studio .studio-info h3 {
+  width: 100%;
+  text-align: left;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 174, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .myStudios a .studio .studio-info h3, body .myStudios a .studio .studio-info h3 {
+    padding: 1em;
+  }
+}
+
+/* line 183, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .studio-info .studio-details ul, body .myStudios a .studio .studio-info .studio-details ul {
+  margin-left: 1em;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 183, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .myStudios a .studio .studio-info .studio-details ul, body .myStudios a .studio .studio-info .studio-details ul {
+    margin-left: 2em;
+  }
+}
+
+/* line 191, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .special-btn, body .myStudios a .studio .special-btn {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  width: 40%;
+  display: none;
+}
+
+/* line 198, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .cover, body .myStudios a .studio .cover {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 207, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .myStudios a .studio:hover .special-btn, body .myStudios a .studio:hover .special-btn {
+    display: block;
+    opacity: 1;
+    z-index: 2;
+    border-radius: 0px;
+  }
+  /* line 213, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .myStudios a .studio:hover .cover, body .myStudios a .studio:hover .cover {
+    display: block;
+    z-index: 1;
+  }
+}
+
+/* line 219, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .myStudios a .studio .mobile-btn, body .myStudios a .studio .mobile-btn {
+  margin-left: 2em;
+  margin-bottom: 2em;
+  border-radius: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 219, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .myStudios a .studio .mobile-btn, body .myStudios a .studio .mobile-btn {
+    display: none;
+  }
+}
+
+/* line 230, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .contact-form, body .contact-form {
+  margin-bottom: 3em;
+}
+
+/* line 232, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .contact-form input, body .contact-form input {
+  padding: 0.5em;
+  width: 100%;
+}
+
+/* line 236, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .contact-form textarea, body .contact-form textarea {
+  width: 100%;
+}
+
+/* line 239, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .contact-form #send-btn, body .contact-form #send-btn {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 239, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .contact-form #send-btn, body .contact-form #send-btn {
+    width: unset;
+  }
+}
+
+/* line 246, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .paralax, body .paralax {
+  width: 100%;
+  min-height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+/* line 254, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .paralax h2, body .paralax h2 {
+  text-align: center;
+  line-height: 200px;
+  font-size: 3em;
+  text-shadow: 5px 5px black;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 254, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .paralax h2, body .paralax h2 {
+    line-height: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 254, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .paralax h2, body .paralax h2 {
+    line-height: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 254, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .paralax h2, body .paralax h2 {
+    line-height: 700px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 246, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .paralax, body .paralax {
+    background-attachment: fixed;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 246, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .paralax, body .paralax {
+    min-height: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 246, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .paralax, body .paralax {
+    min-height: 700px;
+  }
+}
+
+/* line 281, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .studio-details-page, body .studio-details-page {
+  float: right;
+  padding: 1em;
+  border-radius: 5px;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  background-color: #f8ffff;
+  width: 100%;
+  box-shadow: 0px 0px 40px #d6d6d6;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 281, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+  html .studio-details-page, body .studio-details-page {
+    box-shadow: -15px 15px 40px #d6d6d6;
+    width: unset;
+  }
+}
+
+/* line 295, D:/xampp/htdocs/wp-content/themes/fotostudio/sass/style.scss */
+html .studio-text, body .studio-text {
+  margin-bottom: 2em;
+}
+
+/*# sourceMappingURL=../css/style.map */
